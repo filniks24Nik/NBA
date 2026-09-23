@@ -1,0 +1,10 @@
+[
+  {
+    "id": "SEG01",
+    "text": "This is an example segment. Replace the content of this file with your own script, split into segments the same way as in the ElevenLabs stage of your workflow."
+  },
+  {
+    "id": "SEG02",
+    "text": "Each object needs a unique id and the narration text for that segment. The script will generate one mp3 per segment and then stitch them together in order."
+  }
+]
