@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+output/audio/*.mp3
+output/images/*.png
+output/*.mp4
+!output/.gitkeep
+!output/audio/.gitkeep
+!output/images/.gitkeep
+.DS_Store

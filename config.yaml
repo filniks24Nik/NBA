@@ -1,0 +1,24 @@
+# === НАСТРОЙКИ ПАЙПЛАЙНА ===
+
+video:
+  fps: 30
+  frame_duration_sec: 2.0        # длительность одного кадра (регламент "строгий ритм")
+  width: 1920
+  height: 1080
+  output_file: "output/final_video.mp4"
+
+audio:
+  # Edge TTS — бесплатно, без API-ключа
+  voice: "en-US-ChristopherNeural"   # спокойный мужской голос, подходит под dark documentary
+  rate: "-4%"                         # чуть медленнее — под мрачный темп (аналог speed 0.96)
+  output_file: "output/audio/narration.mp3"
+
+images:
+  provider: "huggingface"             # huggingface | fal
+  huggingface_model: "black-forest-labs/FLUX.1-schnell"
+  fal_model: "fal-ai/flux/schnell"
+  output_dir: "output/images"
+
+paths:
+  script_json: "data/script_segments.json"   # текст озвучки по сегментам
+  frames_csv: "data/frames.csv"              # таблица кадров с промтами (как в чате)
